@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+nav {
+    height: 84px;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(17, 17, 17);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+nav span {
+    width: 179px;
+}
+
+.icons i {
+    padding: 0 5px;
+}
+
+div.welcome {
+    height: 840px;
+    background: rgba(0,0,0,0.75)url('./Images/bg-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.welcome .text {
+    width: 768px;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+    height: 100%;
+}
+
+.welcome .text h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 6.5rem;
+}
+
+.welcome .text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 15px;
+}
+
+.welcome .text a {
+    text-decoration: none;
+    background-color: rgb(126, 175, 211);
+    color: rgb(17, 24, 39);
+    padding: 15px 20px;
+    font-size: 1.3rem;
+}

@@ -6,6 +6,10 @@
     color: white;
 }
 
+body {
+    background-color: rgb(17, 17, 17);
+}
+
 nav {
     height: 84px;
     padding: 0 150px;

@@ -243,3 +243,10 @@ div.welcome {
         width: 350px;
     }
 }
+
+@media (min-width: 1500px) {
+    .welcome .text {
+        width: 790px;
+        margin-left: 15rem;
+    }
+}

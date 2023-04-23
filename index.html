@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Dropie | Home</title>
+    
     <link rel="stylesheet" href="./style.css">
+    
     <script src="https://kit.fontawesome.com/9cbebdcc6e.js" crossorigin="anonymous"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -27,8 +33,8 @@
 
         <div class="welcome">
             <div class="text">
-                <h2>Robotics Revolutionizes Indian Business</h2>
-                <p>Dropie is an Indian robotics business offering a range of advanced robotic solutions for businesses. From automated manufacturing to robotic process automation, Dropie is committed to helping businesses reach their full potential with cutting-edge technology.</p>
+                <h2 class="main-title">Robotics Revolutionizes Indian Business</h2>
+                <p class="desc">Dropie is an Indian robotics business offering a range of advanced robotic solutions for businesses. From automated manufacturing to robotic process automation, Dropie is committed to helping businesses reach their full potential with cutting-edge technology.</p>
                 <span><a href="./pages/why_dropie.html">Why Dropie?</a></span>
             </div>
         </div>
@@ -57,5 +63,17 @@
             </div>
         </div>
     </section>
+    <script>
+        ScrollReveal({ 
+            reset: true,
+            distance: '100px',
+            duration: 2500,
+            // delay: 400 
+        });
+
+        ScrollReveal().reveal('.main-title, .edu', {delay: 100, origin: 'left'});
+        ScrollReveal().reveal('.desc, .off', {delay: 100, origin: 'right'});
+        ScrollReveal().reveal('.med', {delay: 100, origin: 'bottom'});
+    </script>
 </body>
 </html>

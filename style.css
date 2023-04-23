@@ -8,6 +8,7 @@
 
 body {
     background-color: rgb(17, 17, 17);
+    overflow-x: hidden; /* Temporary Solution for Overflow Juggad */
 }
 
 nav {
@@ -71,20 +72,26 @@ div.welcome {
 }
 
 .services {
+    width: 100%;
     background-color: rgb(51, 51, 51);
     height: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .services h2 {
     font-size: 3rem;
     text-align: center;
-    padding: 40px 0;
+    justify-self: flex-start;
 }
 
 .cards {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .cards .card {
@@ -93,6 +100,7 @@ div.welcome {
 }
 
 .cards .card h3 {
+    text-transform: uppercase;
     font-size: 2rem;
     letter-spacing: 1px;
     font-weight: 700;
@@ -116,8 +124,122 @@ div.welcome {
     font-size: 1.1rem;
 }
 
+@media (max-width: 1500px) {
+    .services {
+        height: 1230px;
+    }
+    
+    .services h2 {
+        font-size: 40px;
+    }
+    
+    .cards {
+        gap: 50px;
+    }
+    
+    .cards .card h3 {
+        font-size: 28px;
+    }
+    
+    .services .cards .card a {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1050px) {
+    .services {
+        height: 1760px;
+    }
+}
+
 @media (max-width: 900px) {
-    body {
-        background-color: white;
-    }   
+    nav {
+        justify-content: center;
+    }
+
+    nav .icons,
+    nav span {
+        display: none;
+    }
+    
+    div.welcome {
+        background-position: center;
+    }
+
+    .welcome .text {
+        width: 500px;
+        margin-left: 3rem;
+    }
+    
+    .welcome .text h2 {
+        font-size: 58px;
+        line-height: 4rem;
+    }
+    
+    .welcome .text p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+    
+    .welcome .text a {
+        padding: 12px 18px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    div.welcome {
+        height: 680px;
+    }
+
+    .welcome .text {
+        width: 300px;
+        margin-left: 1.7rem;
+    }
+    
+    .welcome .text h2 {
+        font-size: 42px;
+        line-height: 2.8rem;
+    }
+    
+    .welcome .text p {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+    
+    .welcome .text a {
+        padding: 12px 18px;
+        font-size: 1.1rem;
+    }
+    
+    .services {
+        overflow: hidden;
+        height: 1600px;
+    }
+
+    .services h2 {
+        font-size: 40px;
+    }
+
+    .cards .card {
+        width: 380px;
+        text-align: center;
+    }
+
+    .cards .card img {
+        height: 200px;
+    }
+
+    .card.off img {
+        width: 300px;
+    }
+
+    .cards .card h3 {
+        font-size: 20px;
+    }
+
+    .cards .card p {
+        width: 350px;
+    }
 }

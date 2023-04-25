@@ -33,8 +33,8 @@
 
         <div class="welcome">
             <div class="text">
-                <h2 class="main-title">Robotics Revolutionizes Indian Business</h2>
-                <p class="desc">Dropie is an Indian robotics business offering a range of advanced robotic solutions for businesses. From automated manufacturing to robotic process automation, Dropie is committed to helping businesses reach their full potential with cutting-edge technology.</p>
+                <h2 class="main-title">Revolutionizing the Future with Intelligent Robotics</h2>
+                <p class="desc">Welcome to Dropie! We are passionate about creating cutting-edge robots that can revolutionize the way we live, work, and learn. Our team of experts is dedicated in designing and building robots that are efficient, intelligent, and user-friendly. Our website is a link to share our ideas with you. Here, you can learn more about our mission and values, explore our work, and stay up-to-date with the latest news and developments in the world of robots. We hope you enjoy browsing our website and discovering the exciting possibilities our robots can offer.</p>
                 <span><a href="./pages/why_dropie.html">Why Dropie?</a></span>
             </div>
         </div>
@@ -45,20 +45,20 @@
                 <div class="card edu">
                     <img src="./Images/bg-education.jpg" height="280px" alt="Education">
                     <h3>Education</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fuga quisquam aut magni expedita molestias architecto similique error velit corrupti cumque porro, eos aperiam qui beatae eius. Ipsum, eligendi facere?</p>
-                    <span><a href="#">Read More</a></span>
+                    <p>The "Dropie" is an innovative learning solution for students to enhance their programming skills. It consists of a physical robot that teaches programming concepts in a fun and interactive way, and a software system that keeps records of students' progress and performance. The system also includes a student-helping app with an AI chatbot that can solve their doubts instantly.</p>
+                    <span><a id="rmore" onclick="rmore()" href="#">Read More</a></span>
                 </div>
                 <div class="card med">
                     <img src="./Images/bg-medical.jpg" height="280px" alt="Education">
                     <h3>Medical</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fuga quisquam aut magni expedita molestias architecto similique error velit corrupti cumque porro, eos aperiam qui beatae eius. Ipsum, eligendi facere?</p>
-                    <span><a href="#">Read More</a></span>
+                    <p>The Dropie robot performs various nursing tasks, such as taking vital signs, administering medication, and assisting with daily activities. The software system keeps records of patients' health and medical history, allowing for more personalized care. In addition, it includes an app with an AI chatbot that can provide solutions to patients' health concerns based on their symptoms.</p>
+                    <span><a id="rmore" onclick="rmore()" href="#">Read More</a></span>
                 </div>
                 <div class="card off">
                     <img src="./Images/possessed-photography-zbLW0FG8XU8-unsplash (1).jpg" height="280px" width="420px" alt="Education">
                     <h3>Offices</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fuga quisquam aut magni expedita molestias architecto similique error velit corrupti cumque porro, eos aperiam qui beatae eius. Ipsum, eligendi facere?</p>
-                    <span><a href="#">Read More</a></span>
+                    <p>We specialize in developing and deploying robots for office work, including data recording and management, scheduling, customer service, and more. Our robots are designed to automate repetitive tasks, freeing up valuable time for your team to focus on important work. Thank you for considering our company for your robotic needs</p>
+                    <span><a id="rmore" onclick="rmore()" href="#">Read More</a></span>
                 </div>
             </div>
         </div>
@@ -71,9 +71,12 @@
             // delay: 400 
         });
 
-        ScrollReveal().reveal('.main-title, .edu', {delay: 100, origin: 'left'});
-        ScrollReveal().reveal('.desc, .off', {delay: 100, origin: 'right'});
-        ScrollReveal().reveal('.med', {delay: 100, origin: 'bottom'});
+        ScrollReveal().reveal('.main-title', {delay: 100, origin: 'left'});
+        ScrollReveal().reveal('.desc', {delay: 100, origin: 'right'});
+        ScrollReveal().reveal('.edu', {delay: 10, duration: 1200, origin: 'left'});
+        ScrollReveal().reveal('.off', {delay: 10, duration: 1200, origin: 'right'});
+        ScrollReveal().reveal('.med', {delay: 10, duration: 1200, origin: 'bottom'});
     </script>
+    <script src="./main.js"></script>
 </body>
 </html>

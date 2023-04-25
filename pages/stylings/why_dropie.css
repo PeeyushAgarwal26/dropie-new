@@ -110,3 +110,21 @@ nav span {
         margin-right: 20px;
     }
 } 
+
+@media (min-width: 1250px) {
+    .w_d {
+        height: 100vh;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1550px) {
+    .w_d {
+        height: 95vh;
+    }
+
+    .w_d p {
+        margin-top: 20px; 
+        margin-bottom: 50px;
+    }
+}

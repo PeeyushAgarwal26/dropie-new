@@ -246,7 +246,14 @@ div.welcome {
 
 @media (min-width: 1500px) {
     .welcome .text {
-        width: 790px;
+        width: 820px;
+        margin-left: 7rem;
+    }
+}
+
+@media (min-width: 1550px) {
+    .welcome .text {
+        width: 880px;
         margin-left: 15rem;
     }
 }

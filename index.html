@@ -14,8 +14,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -24,7 +26,7 @@
             <span></span>
             <p>Dropie</p>
             <div class="icons">
-                <a href="www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://instagram.com/dropie_2023?igshid=ODM2MWFjZDg=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://twitter.com/dropie2023?t=QqynMZXD89aV1QQopaObGA&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/in/dropie-dot-822024274" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -62,8 +64,27 @@
                 </div>
             </div>
         </div>
+
+        <div class="reviews swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="review swiper-slide">
+                    <p class="rev-text">I was really happy with Dropie's robot services and customer service in India. The robot was delivered on time, and the team was always available to answer my questions. Highly recommended!</p>
+                    <h3 class="rev-name">- Jay, India</h3>
+                </div>
+                <div class="review swiper-slide">
+                    <p class="rev-text">Review 31 Words 189 Characters ka hona chiye, na jyada km, na jyada jyada, thoda bhut upar niche chalta h..</p>
+                    <h3 class="rev-name">- Peeyush, India</h3>
+                </div>
+                <div class="review swiper-slide">
+                    <p class="rev-text">I was really happy with Dropie's robot services and customer service in India. The robot was delivered on time, and the team was always available to answer my questions. Highly recommended!</p>
+                    <h3 class="rev-name">- Jay, India</h3>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
-    <script>
+   
+   <script>
         ScrollReveal({ 
             reset: true,
             distance: '100px',
@@ -76,6 +97,15 @@
         ScrollReveal().reveal('.edu', {delay: 10, duration: 1200, origin: 'left'});
         ScrollReveal().reveal('.off', {delay: 10, duration: 1200, origin: 'right'});
         ScrollReveal().reveal('.med', {delay: 10, duration: 1200, origin: 'bottom'});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+        },
+        });
     </script>
     <script src="./main.js"></script>
 </body>

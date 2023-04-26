@@ -74,7 +74,7 @@ div.welcome {
 .services {
     width: 100%;
     background-color: rgb(51, 51, 51);
-    height: 720px;
+    height: 750px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,6 +124,40 @@ div.welcome {
     font-size: 1.1rem;
 }
 
+.reviews {
+    height: 330px;
+    background-color: rgb(34, 34, 34);
+}
+
+.reviews .review {
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.reviews .review .rev-text {
+    width: 50%;
+    font-size: 32px;
+    line-height: 40px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 700;
+}
+
+.reviews .review .rev-name {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white !important;
+}
+
 @media (max-width: 1500px) {
     .services {
         height: 1330px;
@@ -150,6 +184,22 @@ div.welcome {
 @media (max-width: 1050px) {
     .services {
         height: 1960px;
+    }
+
+    .reviews {
+        height: 360px;
+    }
+    
+    .reviews .review .rev-text {
+        width: 50%;
+        font-size: 28px;
+        line-height: 30px;
+    }
+    
+    .reviews .review .rev-name {
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
 }
 
@@ -190,6 +240,22 @@ div.welcome {
 
     .services {
         height: 1980px;
+    }
+
+    .reviews {
+        height: 330px;
+    }
+    
+    .reviews .review .rev-text {
+        width: 50%;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    
+    .reviews .review .rev-name {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 2rem;
     }
 }
 
@@ -246,6 +312,22 @@ div.welcome {
 
     .cards .card p {
         width: 350px;
+    }
+
+    .reviews {
+        height: 360px;
+    }
+    
+    .reviews .review .rev-text {
+        width: 70%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .reviews .review .rev-name {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 2rem;
     }
 }
 

@@ -126,7 +126,7 @@ div.welcome {
 
 @media (max-width: 1500px) {
     .services {
-        height: 1230px;
+        height: 1830px;
     }
     
     .services h2 {
@@ -164,6 +164,8 @@ div.welcome {
     }
     
     div.welcome {
+        border: 2px dashed white;
+        height: 800px;
         background-position: center;
     }
 
@@ -186,6 +188,10 @@ div.welcome {
         padding: 12px 18px;
         font-size: 1.1rem;
     }
+
+    /* .services {
+        height: 2500px;
+    } */
 }
 
 @media (max-width: 550px) {

@@ -126,7 +126,7 @@ div.welcome {
 
 @media (max-width: 1500px) {
     .services {
-        height: 1830px;
+        height: 1330px;
     }
     
     .services h2 {
@@ -149,7 +149,7 @@ div.welcome {
 
 @media (max-width: 1050px) {
     .services {
-        height: 1760px;
+        height: 1960px;
     }
 }
 
@@ -164,7 +164,6 @@ div.welcome {
     }
     
     div.welcome {
-        border: 2px dashed white;
         height: 800px;
         background-position: center;
     }
@@ -189,14 +188,14 @@ div.welcome {
         font-size: 1.1rem;
     }
 
-    /* .services {
-        height: 2500px;
-    } */
+    .services {
+        height: 1980px;
+    }
 }
 
 @media (max-width: 550px) {
     div.welcome {
-        height: 680px;
+        height: 920px;
     }
 
     .welcome .text {
@@ -221,7 +220,7 @@ div.welcome {
     
     .services {
         overflow: hidden;
-        height: 1600px;
+        height: 1880px;
     }
 
     .services h2 {

@@ -158,12 +158,83 @@ div.welcome {
     background-color: white !important;
 }
 
+.about {
+    height: 1060px;
+}
+
+.about .about-text {
+    height: 400px;
+    width: 78%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about h2.he-te {
+    margin-top: 20px;
+}
+
+.about .about-text p {
+    font-size: 1.3rem;
+}
+
+.team,
+.sli,
+.p-1,
+.p-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.sli {
+    flex-wrap: wrap;
+}
+
+.team {
+    flex-direction: column;
+    gap: 0px;
+    /* border: 2px dashed white; */
+    padding-bottom: 50px;
+    background-color: rgb(51, 51, 51);
+}
+
+.karan, .kamli, .gaju, .kaka {
+    width: 270px;
+    padding: 30px;
+    background-color: rgb(245, 245, 245);
+}
+
+.team h3, 
+.team p,
+.team span {
+    padding-top: 20px;
+    color: black;
+}
+
+.team span {
+    display: block;
+    /* margin-top: 10px; */
+    font-weight: 700;
+}
+
 @media (max-width: 1500px) {
     .services {
         height: 1330px;
     }
     
-    .services h2 {
+    .services h2,
+    .about h2 {
         font-size: 40px;
     }
     
@@ -178,6 +249,18 @@ div.welcome {
     .services .cards .card a {
         padding: 10px 15px;
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 1410px) {
+    .about {
+        height: 1610px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .about .about-text {
+        height: 420px;
     }
 }
 
@@ -200,6 +283,18 @@ div.welcome {
         font-weight: 400;
         font-size: 1.5rem;
         line-height: 2rem;
+    }
+    
+    .about {
+        height: 1570px;
+    }
+    
+    .about .about-text {
+        height: 360px;
+    }
+
+    .about .about-text p {
+        font-size: 1rem;
     }
 }
 
@@ -257,6 +352,42 @@ div.welcome {
         font-size: 1rem;
         line-height: 2rem;
     }
+
+    .about {
+        height: 1600px;
+    }
+
+    .about .about-text {
+        height: 400px;
+    }
+
+    .p-1, .p-2 {
+        flex-wrap: wrap;
+    }
+    
+    .sli, .p-1, .p-2 {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 740px) {
+    .about {
+        height: 1640px;
+    }
+
+    .about .about-text {
+        height: 450px;
+    }
+
+    .sli, .p-1, .p-2 {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 670px) {
+    .about {
+        height: 2680px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -289,7 +420,8 @@ div.welcome {
         height: 1880px;
     }
 
-    .services h2 {
+    .services h2,
+    .about h2 {
         font-size: 40px;
     }
 
@@ -328,6 +460,31 @@ div.welcome {
         font-weight: 400;
         font-size: 1rem;
         line-height: 2rem;
+    }
+
+    .about {
+        height: 2530px;
+    }
+
+    .about .about-text {
+        width: 88%;
+        /* text-align: justify; */
+        height: 650px;
+    }
+
+    .team img {
+        height: 150px !important;
+    }
+    
+    .karan, .kamli, .gaju, .kaka {
+        width: 220px;
+    }
+
+    .team h3, 
+    .team p,
+    .team span {
+        padding-top: 10px;
+        color: black;
     }
 }
 

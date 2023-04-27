@@ -37,6 +37,7 @@ div.welcome {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
+    overflow: hidden;
 }
 
 .welcome .text {
@@ -79,6 +80,7 @@ div.welcome {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    overflow: hidden;
 }
 
 .services h2 {
@@ -160,6 +162,7 @@ div.welcome {
 
 .about {
     height: 1060px;
+    overflow: hidden;
 }
 
 .about .about-text {

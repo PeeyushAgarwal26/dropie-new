@@ -77,6 +77,22 @@ nav span {
     padding-left: 10px;
 }
 
+footer {
+    background-color: rgb(63, 92, 145);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 30px 100px;
+}
+
+.cpyrgt .cpy {
+    padding: 10px 0;
+    text-align: center;
+}
+
 @media (max-width: 1050px) {
     .w_d h2 {
         font-size: 45px;
@@ -100,6 +116,14 @@ nav span {
     .w_d p {
         font-size: 20px;
     }
+
+    footer {
+        padding: 30px 80px;
+    }
+
+    footer .icons i {
+        padding: 0 2px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -117,7 +141,22 @@ nav span {
         font-size: 1rem;
         margin-right: 20px;
     }
+
+    footer {
+        font-size: 25px;
+        padding: 30px 50px;
+    }
+
+    footer .icons i {
+        padding: 0;
+    }
 } 
+
+@media (max-width: 380px) {
+    footer {
+        font-size: 20px;
+    }
+}
 
 @media (min-width: 1250px) {
     .w_d {

@@ -26,7 +26,7 @@
             <span></span>
             <p>Dropie</p>
             <div class="icons">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100092269028387&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://instagram.com/dropie_2023?igshid=ODM2MWFjZDg=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://twitter.com/dropie2023?t=QqynMZXD89aV1QQopaObGA&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/in/dropie-dot-822024274" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -123,9 +123,93 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
+
+        <!-- <div class="contact">
+            <div class="context">
+                <h3>Contact Dropie Robotics</h3>
+                <p>We are eager to hear from you. Please use this form to ask questions, provide feedback, or just to say hi !</p>
+            </div>
+            <div class="form">
+
+            </div> 
+        </div> -->
+    
+        <section class="contact-section">        
+            <div class="popup" id="popup">
+                <!-- <img src="./Images/404-tick.png" alt="tick.jpg"> -->
+                <h2>Thank You!</h2>
+                <p>Your message has been succesfully sent. Thanks!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+            <div class="container">
+                <div class="context">
+                    <h3>Contact Dropie Robotics</h3>
+                    <p>We are eager to hear from you. Please use this form to ask questions, provide feedback, or just to say hi !</p>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/dropie-dot-822024274" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://instagram.com/dropie_2023?igshid=ODM2MWFjZDg=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/dropie2023?t=QqynMZXD89aV1QQopaObGA&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100092269028387&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href= "mailto: dropie2022.01@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <form onsubmit="sendEmail(); openPopup(); reset(); return false;">
+                    <div class="row100">
+                        <div class="col">
+                            <div class="inputBox">
+                                <span class="text">First Name</span>
+                                <input type="text" id="first_name" name="" required="required">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="inputBox">
+                                <span class="text">Last Name</span>
+                                <input type="text" id="last_name" name="" required="required">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row100">
+                        <div class="col">
+                            <div class="inputBox">
+                                <span class="text">Email ID</span>
+                                <input type="email" id="email" name="" required="required">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="inputBox">
+                                <span class="text">Mobile No.</span>
+                                <input type="tel" id="mobile_no" name="" required="required">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="col">
+                            <div class="inputBox textarea">
+                                <span class="text">Type Your Message Here...</span>
+                                <!-- <label class="text" for="message">Type Your Message Here...</label> -->
+                                <textarea required="required" id="message" name="" rows="10" cols="40"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="col submit">
+                            <input type="submit" value="Send"> <!-- onclick="openPopup()"> -->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
     </section>
    
-   <script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        // Scroll Reveal Wala jo saari jaghe use hua h uska script
         ScrollReveal({ 
             reset: true,
             distance: '100px',
@@ -139,16 +223,40 @@
         ScrollReveal().reveal('.off, .kaka', {delay: 10, duration: 1200, origin: 'right'});
         ScrollReveal().reveal('.med, .gaju', {delay: 10, duration: 1200, origin: 'bottom'});
         ScrollReveal().reveal('.kamli', {delay: 10, duration: 1200, origin: 'top'});
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script>
+        
+        // Reviews wala Swiper
         var swiper = new Swiper(".mySwiper", {
             loop: true,
             pagination: {
                 el: ".swiper-pagination",
         },
         });
+
+        // Contact Us form send krne wala function
+        function sendEmail(){
+            alert('Msg Sent')
+            Email.send({
+                SecureToken: '206bce55-04b8-4d45-9b57-2a62af06c736',
+                To : 'dropie2022.01@gmail.com',
+                From : 'ummhmm449@gmail.com',
+                Subject : "New Contact Form.",
+                Body : "First Name: " + document.getElementById('first_name').value
+                + "<br> Last Name: " + document.getElementById('last_name').value
+                + "<br> Mobile Number: " + document.getElementById('mobile_no').value
+                + "<br> Email: " + document.getElementById('email').value
+                + "<br> Message: " + document.getElementById('message').value
+            });
+        }
+
+        // Email Sent hone ke baad aane wala popup
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
     </script>
-    <script src="./main.js"></script>
 </body>
 </html>

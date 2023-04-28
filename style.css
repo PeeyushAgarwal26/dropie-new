@@ -185,7 +185,8 @@ div.welcome {
     margin-top: 20px;
 }
 
-.about .about-text p {
+.about .about-text p,
+.context p {
     font-size: 1.3rem;
 }
 
@@ -207,7 +208,6 @@ div.welcome {
 .team {
     flex-direction: column;
     gap: 0px;
-    /* border: 2px dashed white; */
     padding-bottom: 50px;
     background-color: rgb(51, 51, 51);
 }
@@ -229,6 +229,138 @@ div.welcome {
     display: block;
     /* margin-top: 10px; */
     font-weight: 700;
+}
+
+.contact-section {
+    height: 600px;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 150px;
+}
+
+.context {
+    width: 500px;
+    text-align: center;
+}
+
+.context .icons {
+    margin-top: 26px;
+}
+
+.context .icons i {
+    font-size: 2rem;
+}
+
+.container h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.container form {
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .row100 {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.container .row100 .col {
+    width: 100%;
+    margin: 30px 0 20px;
+}
+
+.container .row100 .col .inputBox input,
+.container .row100 .col .inputBox textarea {
+    /* width: 100%; */
+    height: 100%;
+    font-size: 17px;
+    padding: 3px 10px;
+    z-index: 1;
+    color: #000;
+    resize: none;
+}
+
+.container .row100 .col .inputBox .text {
+    line-height: 40px;
+    font-size: 19px;
+    padding: 0 10px;
+    display: block;
+    pointer-events: none;
+}
+
+.container .row100 .col .inputBox.textarea {
+    width: 100%;
+    height: 150px;
+    padding: 5px 0;
+    padding-right: 10px !important;
+}
+
+.container .row100 .col .inputBox.textarea textarea {
+    width: 97% !important;
+}
+
+.container .row100 .col input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 2px;
+    background-color: rgb(126, 175, 211);
+    color: rgb(17, 24, 39);
+    padding: 15px 20px;
+    font-size: 1.3rem;
+}
+
+.popup {
+    width: 400px;
+    padding: 0 30px 30px;
+    border-radius: 6px;
+    color: #fff;
+    background: #333;
+    text-align: center;
+    z-index: 5;
+    overflow: visible;
+    display: none;
+    transition: transform 0.4s, top 0.4s;
+    position: absolute;
+    left: 50%; 
+}
+
+.open-popup {
+    display: block;
+    top: 3350px;
+    /* top: 50%; */
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 20px 0 20px;
+    text-shadow: none;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 30px;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(126, 175, 211);
+    color: rgb(17, 24, 39);
+    padding: 10px 0px;
+    font-size: 1.2rem;
 }
 
 @media (max-width: 1500px) {
@@ -259,11 +391,34 @@ div.welcome {
     .about {
         height: 1610px;
     }
+    
+    .open-popup {
+        top: 4480px;
+    }
 }
 
 @media (max-width: 1250px) {
     .about .about-text {
         height: 420px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .reviews {
+        height: 350px;
+    }
+
+    .contact-section {
+        height: 850px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .open-popup {
+        top: 4600px;
     }
 }
 
@@ -298,6 +453,10 @@ div.welcome {
 
     .about .about-text p {
         font-size: 1rem;
+    }
+
+    .open-popup {
+        top: 5200px;
     }
 }
 
@@ -385,11 +544,67 @@ div.welcome {
     .sli, .p-1, .p-2 {
         gap: 10px;
     }
+    
+    .contact-section {
+        height: 1130px;
+    }
+
+    form {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .row100 {
+        width: 350px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0 !important;
+    }
+    
+    .contact-section {
+        height: 890px;
+    }
+
+    .context p {
+        font-size: 1rem;
+    }
+
+    .context .icons i {
+        font-size: 1.5rem;
+    }
+
+    .container h3 {
+        font-size: 1.5rem;
+    }
+
+    .row100 .col {
+        margin: 10px 0 10px !important;
+    }
+
+    .row100 .col.submit {
+        margin-top: 50px !important;
+    }
+    
+    .popup {
+        width: 250px;
+    }
+    
+    .popup h2 {
+        font-size: 32px;
+        font-weight: 500;
+        margin: 20px 0 20px;
+        text-shadow: none;
+    }
 }
 
 @media (max-width: 670px) {
     .about {
         height: 2680px;
+    }
+
+    .open-popup {
+        top: 6300px;
     }
 }
 
@@ -466,7 +681,7 @@ div.welcome {
     }
 
     .about {
-        height: 2530px;
+        height: 2760px;
     }
 
     .about .about-text {
@@ -476,7 +691,7 @@ div.welcome {
     }
 
     .team img {
-        height: 150px !important;
+        height: 200px !important;
     }
     
     .karan, .kamli, .gaju, .kaka {
@@ -488,6 +703,15 @@ div.welcome {
     .team span {
         padding-top: 10px;
         color: black;
+    }
+    
+    .popup {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .popup h2 {
+        font-size: 25px;
     }
 }
 

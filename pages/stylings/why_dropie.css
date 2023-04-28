@@ -4,7 +4,7 @@
     border: none;
     font-family: 'Poppins', sans-serif;
     color: white;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 body {
@@ -34,7 +34,6 @@ nav span {
 }
 
 .w_d {
-    /* height: 800px; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -45,6 +44,7 @@ nav span {
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: darken;
+    overflow-x: hidden;
 }
 
 .w_d h2 {
@@ -53,8 +53,7 @@ nav span {
 }
 
 .w_d p {
-    text-align: center;
-    /* width: 1100px; */
+    text-align: left;
     width: 84%;
     padding: 40px;
     font-size: 22px;
@@ -78,6 +77,12 @@ nav span {
     padding-left: 10px;
 }
 
+@media (max-width: 1050px) {
+    .w_d h2 {
+        font-size: 45px;
+    }
+}
+
 @media (max-width: 900px) {
     nav {
         justify-content: center;
@@ -93,41 +98,34 @@ nav span {
     }
     
     .w_d p {
-        text-align: justify;
         font-size: 20px;
     }
 }
 
 @media (max-width: 550px) {
     .w_d h2 {
-        font-size: 32px;
+        font-size: 23px;
     }
     
     .w_d p {
-        text-align: center;
-        font-size: 1.1rem;
-        /* text-justify: none; */
+        text-align: left;
+        font-size: 1rem;
     }
     
     .w_d a {
         padding: 12px 18px;
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-right: 20px;
     }
 } 
 
 @media (min-width: 1250px) {
     .w_d {
-        height: 100vh;
         justify-content: center;
     }
 }
 
 @media (min-width: 1550px) {
-    .w_d {
-        height: 95vh;
-    }
-
     .w_d p {
         margin-top: 20px; 
         margin-bottom: 50px;

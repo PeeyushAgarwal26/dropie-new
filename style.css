@@ -176,7 +176,8 @@ div.welcome {
     align-items: center;
 }
 
-.about h2 {
+.about h2,
+.location .loc-text h2 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
@@ -186,7 +187,8 @@ div.welcome {
 }
 
 .about .about-text p,
-.context p {
+.context p,
+.location .loc-text p {
     font-size: 1.3rem;
 }
 
@@ -379,6 +381,21 @@ footer {
     text-align: center;
 }
 
+.location {
+    height: 100%;
+    background-color: rgb(51, 51, 51);
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+}
+
+.location .loc-text {
+    width: 30%;
+}
+
 @media (max-width: 1500px) {
     .services {
         height: 1330px;
@@ -467,12 +484,17 @@ footer {
         height: 360px;
     }
 
-    .about .about-text p {
+    .about .about-text p,
+    .location .loc-text p {
         font-size: 1rem;
     }
 
     .open-popup {
         top: 5200px;
+    }
+
+    .location .loc-text h2 {
+        font-size: 2.4rem;
     }
 }
 
@@ -553,6 +575,23 @@ footer {
 
     footer .icons i {
         padding: 0 2px;
+    }
+
+    .location {
+        flex-direction: column-reverse;
+        
+    }
+
+    .location iframe {
+        width: 80%;
+    }
+
+    .location .loc-text {
+        width: 60%;
+    }
+
+    .location .loc-text h2 {
+        margin-bottom: 10px;
     }
 }
 
@@ -663,7 +702,8 @@ footer {
     }
 
     .services h2,
-    .about h2 {
+    .about h2,
+    .location .loc-text h2 {
         font-size: 40px;
     }
 
@@ -745,6 +785,14 @@ footer {
 
     footer .icons i {
         padding: 0;
+    }
+
+    .location iframe {
+        width: 88%;
+    }
+
+    .location .loc-text {
+        width: 80%;
     }
 }
 

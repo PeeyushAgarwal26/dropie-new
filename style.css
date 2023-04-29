@@ -377,6 +377,8 @@ footer {
 }
 
 .cpyrgt .cpy {
+    margin: auto;
+    width: 94%;
     padding: 10px 0;
     text-align: center;
 }
@@ -796,9 +798,19 @@ footer {
     }
 }
 
+@media (max-width: 420px) {
+    .cpyrgt .cpy {
+        font-size: 0.9rem;
+    }
+}
+
 @media (max-width: 380px) {
     footer {
         font-size: 20px;
+    }
+    
+    .cpyrgt .cpy {
+        font-size: 0.8rem;
     }
 }
 

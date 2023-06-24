@@ -127,7 +127,7 @@ div.welcome {
 }
 
 .reviews {
-    height: 330px;
+    height: 350px;
     background-color: rgb(34, 34, 34);
 }
 
@@ -215,6 +215,11 @@ div.welcome {
 }
 
 .karan, .kamli, .gaju, .kaka {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 455px;
     width: 270px;
     padding: 30px;
     background-color: rgb(245, 245, 245);
@@ -228,9 +233,11 @@ div.welcome {
 }
 
 .team span {
-    display: block;
-    /* margin-top: 10px; */
+    /* display: block; */
+    font-size: 19px;
+    align-self: flex-end;
     font-weight: 700;
+    letter-spacing: .25px;
 }
 
 .contact-section {
@@ -440,7 +447,7 @@ footer {
 
 @media (max-width: 1180px) {
     .reviews {
-        height: 350px;
+        height: 380px;
     }
 
     .contact-section {
@@ -664,6 +671,10 @@ footer {
 }
 
 @media (max-width: 670px) {
+    .reviews {
+        height: 350px;
+    }
+
     .about {
         height: 2680px;
     }
@@ -747,7 +758,7 @@ footer {
     }
 
     .about {
-        height: 2760px;
+        height: 2750px;
     }
 
     .about .about-text {
@@ -761,6 +772,7 @@ footer {
     }
     
     .karan, .kamli, .gaju, .kaka {
+        height: 420px;
         width: 220px;
     }
 
